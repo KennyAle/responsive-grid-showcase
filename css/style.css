@@ -8,6 +8,18 @@ html {
     font-size: 10px;
 }
 
+p {
+    font-size: 1.6rem;
+}
+
+ul {
+    font-size: 1.6rem;
+}
+
+li {
+    font-size: 2rem;
+}
+
 img {
     max-width: 100%;
 }
@@ -30,6 +42,7 @@ img {
 .navcontainer ul{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navcontainer li{
@@ -52,11 +65,9 @@ img {
     .navcontainer h1{
         padding-top: 10px;
         letter-spacing: 0.4rem;
-        font-size: 0.96rem;
     }
 
     .navcontainer li{
-        font-size: 0.75rem;
         padding-left: 20px;
         padding-top: 5px;
     }   
@@ -70,11 +81,9 @@ img {
     .navcontainer h1{
         padding-top: 10px;
         letter-spacing: 0.3rem;
-        font-size: 0.9rem;
     }
 
     .navcontainer li{
-        font-size: 0.7rem;
         padding-left: 8px;
         padding-top: 5px;
     }
