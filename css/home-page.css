@@ -1,0 +1,75 @@
+/* BANNER */
+.banner-container {
+    background-image: url("../img/andes3.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 5rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* GRID */
+.home-gallery {
+    max-width: 90vw;
+    margin: 0 auto;
+
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery {
+    border: 2px solid pink;
+}
+
+.gallery-text {
+    background-color: aqua;
+}
+
+.gallery-text > p {
+    font-size: 2.0rem;
+}
+
+.item1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item4 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+@media (max-width: 769px) {
+    .home-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .item1 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    
+    .item4 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 426px) {
+    .home-gallery {
+        grid-template-columns: 1fr;
+    }
+    .item1 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+/* IMG */
+.gallery-img {
+    width: 100%;
+    padding-bottom: 0.5em;
+}
