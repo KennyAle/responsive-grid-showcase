@@ -13,7 +13,8 @@ p {
 }
 
 ul {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    list-style: none;
 }
 
 li {
@@ -23,7 +24,6 @@ li {
 img {
     max-width: 100%;
 }
-
 
 /*-----------------------navigation----------------------------*/
 .navcontainer{
@@ -86,5 +86,76 @@ img {
     .navcontainer li{
         padding-left: 8px;
         padding-top: 5px;
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: #000021;
+    color: white;
+    padding-top: 3rem;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+footer > p {
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-item > h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.footer-item > ul > li {
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+.sns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.sns-icon {
+    width: 4rem;
+}
+
+@media (max-width: 769px) {
+    
+}
+
+@media (max-width: 426px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-item > h2 {
+        padding: 1rem 0;
+    }
+    .icon-container {
+        gap: 1.5rem;
+    }
+    .sns-icon {
+        width: 3rem;
     }
 }
