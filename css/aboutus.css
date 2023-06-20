@@ -10,7 +10,8 @@
 
 .navcontainer h1{
     color: white;
-    letter-spacing: 0.6rem;
+    letter-spacing: 9.6px;
+    
 }
 
 .navcontainer ul{
@@ -37,12 +38,12 @@
     }
     .navcontainer h1{
         padding-top: 10px;
-        letter-spacing: 0.4rem;
-        font-size: 0.96rem;
+        letter-spacing: 0.4em;
+        font-size: 0.96em;
     }
 
     .navcontainer li{
-        font-size: 0.75rem;
+        font-size: 0.75em;
         padding-left: 20px;
         padding-top: 5px;
     }   
@@ -55,12 +56,12 @@
     }
     .navcontainer h1{
         padding-top: 10px;
-        letter-spacing: 0.3rem;
-        font-size: 0.9rem;
+        letter-spacing: 0.3em;
+        font-size: 0.9em;
     }
 
     .navcontainer li{
-        font-size: 0.7rem;
+        font-size: 0.75em;
         padding-left: 8px;
         padding-top: 5px;
     }
