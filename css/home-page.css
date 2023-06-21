@@ -45,8 +45,16 @@
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-template-rows: auto;
     justify-items: center;
-    gap: 1rem;
+    gap: 3rem;
     padding: 0 2rem;
+}
+
+.best-sellers > h1 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        text-align: center;
+        padding: 2rem 0;
 }
 
 .best > img {
@@ -60,15 +68,21 @@
 }
 
 .values {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5rem;
     width: 90%;
     margin: 0 auto;
+    text-align: center;
+    padding: 3rem 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3.5rem;
 }
 
-.ourvalues {
-    border: 1px solid pink;
+.values > h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    grid-column: 1 / -1;
 }
 
 .ourvalues > h2 {
@@ -76,15 +90,33 @@
     text-transform: uppercase;
     font-weight: 800;
     padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
 }
 
 .ourvalues > p {
     line-height: 1.8;
 }
 
-/* GRID GALLERY */
+.separator {
+    margin: 0 auto;
+    width: 30%;
+}
+
+/* INGREDIENTS*/
+.ingredients {
+    padding: 2.5rem 0;
+}
+
+.ingredients > h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
 .home-gallery {
-    max-width: 90vw;
+    max-width: 80vw;
     margin: 0 auto;
 
     display: grid;
@@ -93,15 +125,36 @@
 }
 
 .gallery {
-    border: 2px solid pink;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.gallery-img {
+    width: 100%;
+    border-radius: 0.5rem;
+    filter: brightness(80%);
+    transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.gallery-img:hover {
+    filter: brightness(60%);
+    transform: scale(1.03);
+
 }
 
 .gallery-text {
-    background-color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%); 
 }
 
-.gallery-text > p {
-    font-size: 2.0rem;
+.ing-text {
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
 }
 
 .item1 {
@@ -114,11 +167,6 @@
     grid-row: span 2;
 }
 
-/* IMG */
-.gallery-img {
-    width: 100%;
-    padding-bottom: 0.5em;
-}
 
 /* ETHICAL */
 .ethical {
@@ -153,13 +201,13 @@
 
 /* NEWSLETTER */
 .newsletter {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('../img/andes3.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/fragrance_kv.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position:50% 50%;
     height: 40vh;
     color: whitesmoke;
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,14 +217,14 @@
 .newsletter > h1 {
     text-transform: uppercase;
     font-size: 5rem;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 0.4rem;
 }
 
 .newsletter > h2 {
     text-transform: uppercase;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .news {
@@ -206,6 +254,7 @@
     font-family: 'Nunito Sans', sans-serif;
     letter-spacing: 0.3rem;
     font-size: 1rem;
+    font-weight: 700;
 }
 
 @media (max-width: 769px) {

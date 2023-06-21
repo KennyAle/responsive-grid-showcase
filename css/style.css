@@ -7,7 +7,12 @@
 }
 
 html {
+    background-color: #eeeeee;
     font-size: 10px;
+}
+
+h1, h2, h3 {
+    text-wrap: balance;
 }
 
 p {
