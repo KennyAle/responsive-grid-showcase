@@ -1,24 +1,56 @@
 /* BANNER */
 .banner-container {
-    background-image: url("../img/andes3.jpg");
+    background-image: url("../img/herobanner.jpg");
     background-size: cover;
     background-position: center;
     padding: 5rem;
     width: 100%;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.banner-text > h1 {
+    font-size: 4rem;
+}
+
+.banner-text > p {
+    font-size: 2rem;
+}
+
+.banner-text > a {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    background-color: #000021;
+    width: 250px;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+
+    align-self: flex-end;
 }
 
 /* BEST SELLERS */
 .best-sellers-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-grid-template-rows: auto;
+    grid-template-rows: auto;
     justify-items: center;
     gap: 1rem;
+    padding: 0 2rem;
+}
+
+.best > img {
+    width: 100vw;
 }
 
 /* VALUES */
@@ -41,6 +73,13 @@ grid-template-rows: auto;
 
 .ourvalues > h2 {
     text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-bottom: 1.5rem;
+}
+
+.ourvalues > p {
+    line-height: 1.8;
 }
 
 /* GRID GALLERY */
@@ -81,7 +120,98 @@ grid-template-rows: auto;
     padding-bottom: 0.5em;
 }
 
+/* ETHICAL */
+.ethical {
+    background-color: #000021;
+    padding: 3rem 0;
+}
+
+.ethicals {
+    background-image: url(../img/ethical.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 41%;
+    width: 90%;
+    height: 350px;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.ethicals > h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.ethicals > p {
+    font-size: 1.9rem;
+    letter-spacing: 0.2rem;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('../img/andes3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.newsletter > h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: 0.4rem;
+}
+
+.newsletter > h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.news {
+    width: 40vw;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.news > input {
+    padding: 1.3rem;
+}
+
+.news > input::placeholder {
+    color: white;
+    text-transform: capitalize;
+}
+
+[type="email"] {
+    width: 70%;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+[type="submit"] {
+    width: 25%;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0.3rem;
+    font-size: 1rem;
+}
+
 @media (max-width: 769px) {
+    .banner-text {
+        gap: 1rem;
+    }
     .home-gallery {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -89,10 +219,15 @@ grid-template-rows: auto;
         grid-column: span 2;
         grid-row: span 2;
     }
-    
     .item4 {
         grid-column: span 1;
         grid-row: span 1;
+    }
+    .newsletter {
+        height: 45vh;
+    }
+    .news {
+        width: 80vw;
     }
 }
 
@@ -100,11 +235,65 @@ grid-template-rows: auto;
     .best-sellers-container {
         grid-template-columns: 1fr;
     }
+    .banner-text {
+        gap: 1rem;
+    }
+    .banner-text > h1 {
+        font-size: 2.5rem;
+    }
+    
+    .banner-text > p {
+        font-size: 2rem;
+    }
+    
+    .banner-text > a {
+        font-size: 1.5rem;
+    
+    }
     .home-gallery {
         grid-template-columns: 1fr;
     }
     .item1 {
         grid-column: span 1;
         grid-row: span 1;
+    }
+    .values {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .newsletter {
+        height: 40vh;
+    }
+    .news {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    [type="email"] {
+        width: 70%;
+    }
+    [type="submit"] {
+        width: 70%;
+    }
+    .newsletter > p {
+        display: none;
+    }
+    .newsletter > h1 {
+        font-size: 2.7rem;
+    }
+    
+    .newsletter > h2 {
+        font-size: 1.5rem;
+    }
+    .ethicals {
+        height: 250px;
+        padding: 1rem 1rem;
+    }
+    .ethicals > h2 {
+        margin-top: 0;
+        line-height: 1.5;
+    }
+    .ethicals > p {
+        display: none;
     }
 }
