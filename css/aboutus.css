@@ -69,33 +69,31 @@
 
 /*----------------------About US-------------------------*/
 
-
-@media (min-width: 741px) {
-    
+@media (min-width:741px){
     .aboutus-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 750px;
-    padding: 30px;
-    background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 670px;
+        padding: 30px 30px 0px 30px;
+        background-color: white;
     }
-
+    
     .image-large {
         max-width: 50%;
-        height: auto;
+        height: 600px;
         object-fit: cover;
     }
-
+    
     .image-small {
         display: none;
     }
-
+    
     .text-container{
         max-width: 50%;
         display: flex;
         flex-direction: column;
-        padding-top: 150px;
+        justify-content: center;
     }
     
     .text-container h1{
@@ -104,17 +102,18 @@
     
     .text-container p{
         text-align: center;
-        margin-top: 40px;
+        margin-top: 20px;
         padding-left: 60px;
         padding-right: 60px;
-        line-height: 4;
+        line-height: 3;
     }
-
 }
+
 
 @media (max-width: 740px) {
     .aboutus-container{
         font-display: block;
+        overflow: hidden;
     }
     .image-large {
         display: none;
@@ -127,12 +126,57 @@
 
     .text-container h1{
         text-align: center;
+        margin-top: 20px;
     }
     
     .text-container p{
         text-align: center;
-        
         line-height: 4;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
 }
+
+@media (max-width:810px) {
+    .ab2 div{
+        width: 90%;
+    }
+}
+
+
+
+@media (max-width: 426px){
+    .ab2 > div{
+        width: 300px;
+    }
+}
+
+.ab2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    align-items: center;
+    border-top: 5px solid rgb(170, 169, 169) ;
+    padding-top: 40px;
+}
+.ab2 > div{
+    max-width: 900px;
+    margin-bottom: 40px;
+}
+
+.ab2img{
+    width:900px;
+}
+
+.ab2 h1{
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.ab2 p{
+    text-align: center;
+    line-height: 3;
+}
+
