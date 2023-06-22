@@ -1,2 +1,2 @@
 # responsive-grid-showcase
-This is my first git repo
+This project is a responsive website for a perfumery, built using Flexbox, Grid, and media queries. The design adapts to Desktop, Tablet, and Mobile screens. The website consists of at least 4 pages, with 2 pages utilizing Grid layouts. Each team member must contribute to 2 pages, including 1 Grid page. Collaborate using Git by creating branches for each page/feature and merging them into the main branch.
