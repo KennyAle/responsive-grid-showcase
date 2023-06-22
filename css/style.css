@@ -129,6 +129,7 @@ footer > p {
     width: 4rem;
 }
 
+/* HAMBURGER */
 .burger{
     display: none;
   }
@@ -182,6 +183,7 @@ footer > p {
   .burger > li > a {
     text-decoration: none;
     color: white;
+    display: block;
   }
 
   @media (min-width: 427px) {
