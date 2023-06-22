@@ -91,8 +91,8 @@ main{
 
 @media (max-width: 426px){
     .gridarea-1{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
         padding:15px 20px;
     }
 
@@ -101,11 +101,11 @@ main{
     }
 
     .itemname{
-        font-size: 8px;
+        font-size: 13px;
     }
     
     .itemprice {
-        font-size: 6px;
+        font-size: 12px;
     }
     .product-banner-text {
         width: 90%;
